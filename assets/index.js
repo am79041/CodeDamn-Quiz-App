@@ -92,6 +92,7 @@ const showQues = () => {
 
 const startQuiz = () => {
   displayNone("startQuiz");
+  displayNone("viewHighScore");
   displayBlock("spinner");
   setTimeout(() => {
     showQues();
@@ -159,7 +160,8 @@ const showScores = () => {
 
 const viewHighScore = () => {
   displayNone("startQuiz");
-  displayBlock("displayScore");
+  showScores();
+  disHighScores.classList.add("disable");
 };
 
 const clearData = () => {

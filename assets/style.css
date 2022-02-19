@@ -144,6 +144,9 @@ i {
     font-size: 15px;
   }
 }
+.disable {
+  pointer-events: none;
+}
 
 @media (max-width: 810px) {
   #startQuiz,
